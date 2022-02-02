@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script >
-
-function changetext(param) {
+    <title>回声洞自助机</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script>function changetext(param) {
         var a;
-        a =Math.floor(Math.random()*100);
-        window.location.href="./html/"+a+".html";
-
-    }
-
-
-    </script>
+        a = Math.floor(Math.random() * 1816);
+        window.location.href = "html/"+a + ".html";
+    }</script>
+    <script src="jquery-3.6.0.js"></script>
 </head>
 <body>
+<div>
+    <center>
+        <button class="btn btn-primary " type="button" onclick="changetext(this)">随机一个洞（
+        </button>
+    </center>
+</div>
 
-<br>
-<br>
-<br>
-<button type="button" onclick="changetext(this)">随机一个洞（
-
-</button>
 </body>
 </html>

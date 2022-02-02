@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="1.css">
-    <script src="1.js">
+    <link rel="stylesheet" href="bootstrap.css">
+    
+    <script src="main.js">
     
 
 
 
 
     </script>
+    <script src="jquery-3.6.0.js">
+        
+    </script>
 </head>
 <body>
-<button id="anniu" class="alla" type="button" onclick="changetext(this)">随机一个洞（
+<button class="btn btn-primary " type="button" onclick="changetext(this)">随机一个洞（
 </button>
 <br>
 <br>
 <br>
-<div id="dong" class="alla">
+<div class="alla text-center">
 回声洞分洞——(902)<br/><br/><img src="data:image/png;base64,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" /><br/>——尼古拉斯·他
     </div>
 

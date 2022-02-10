@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <title>回声洞自助机</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <script>function changetext(param) {
+<html lang="zh"><head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js" meta charset="UTF-8"></script>
+    <title>回声分洞自助机</title>
+    <style type="text/css">
+        .card-center{
+	        text-align: center;
+	        border-radius: 20px;
+	        width: 500px;
+	        height: 300px;
+	        margin: auto;
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        right: 0;
+	        bottom: 0;
+        }
+    </style>
+    <script>function random_page(param) {
         var a;
         a = Math.floor(Math.random() * 1816);
         window.location.href = "html/"+a + ".html";
-    }</script>
-    <script src="jquery-3.6.0.js"></script>
+    }
+    </script>
+    
 </head>
+    
 <body>
-<div>
-    这里是非官方回声洞（
-    <br>
+<div class="card-center">
     <center>
-        <button class="btn btn-primary " type="button" onclick="changetext(this)">随机一个洞（
-        </button>
-    </center>
-
+        <h1 class="text-secondary">这里是非官方回声洞</h1>
+    </center><br><br>
+        <button class="btn btn-primary " style="width: 60%; height: 25%" type="button" onclick="random_page(this)">
+                <p class="fs-3">随机一个洞</p>
+    </button>
 </div>
-
 </body>
 </html>
